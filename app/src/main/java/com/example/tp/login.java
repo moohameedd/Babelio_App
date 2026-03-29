@@ -4,15 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class login extends AppCompatActivity {
     ImageView btnClose;
+    View btnSignIn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +19,6 @@ public class login extends AppCompatActivity {
 
 
         btnClose = findViewById(R.id.btnClose);
-
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,5 +28,19 @@ public class login extends AppCompatActivity {
             }
         });
 
+
+
+        btnSignIn = findViewById(R.id.btnSignIn);
+
+        if (btnSignIn != null) {
+            btnSignIn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent goToHome = new Intent(login.this, HomeActivity.class);
+                    startActivity(goToHome);
+                    finish();
+                }
+            });
+        }
     }
 }
