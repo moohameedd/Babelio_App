@@ -3,41 +3,30 @@ package com.example.tp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class login extends AppCompatActivity {
+public class forgotPassword extends AppCompatActivity {
     ImageView btnClose;
     TextView forgotPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_forgot_password);
 
 
         btnClose = findViewById(R.id.btnClose);
-        forgotPassword = findViewById(R.id.forgotPassword);
 
-        forgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i =  new Intent(login.this, forgotPassword.class);
-                startActivity(i);
-            }
-        });
 
         btnClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goBack = new Intent(login.this, MainActivity.class);
+                Intent goBack = new Intent(forgotPassword.this,
+                        login.class);
                 startActivity(goBack);
                 finish();
             }

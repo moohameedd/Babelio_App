@@ -136,6 +136,7 @@
             android:textColor="#AAAAAA"/>
 
         <TextView
+            android:id="@+id/forgotPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Forgot Password?"

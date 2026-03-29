@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
         <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".forgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".resetPassword"
+            android:exported="false"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/Theme.TP" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity

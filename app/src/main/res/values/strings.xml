@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Babelio</string>
+    <string name="title_activity_reset_password">resetPassword</string>
 </resources>
