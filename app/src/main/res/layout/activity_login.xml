@@ -81,6 +81,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:fontFamily="@font/nunito_regular"
                 android:textStyle="bold"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
@@ -109,6 +110,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:fontFamily="@font/nunito_regular"
                 android:textStyle="bold"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
@@ -129,11 +131,11 @@
         android:layout_marginTop="8dp">
 
         <CheckBox
+            android:id="@+id/cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Save password"
-            android:id="@+id/cb"
-            android:textColor="#AAAAAA"/>
+            android:textColor="#AAAAAA" />
 
         <TextView
             android:id="@+id/forgotPassword"

@@ -1,12 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
 }
 
 android {
     namespace = "com.example.tp"
-    compileSdk {
-        version = release(36)
-    }
+
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.tp"
@@ -27,6 +27,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -38,6 +39,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    implementation(platform("com.google.firebase:firebase-bom:34.12.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

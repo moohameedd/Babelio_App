@@ -76,10 +76,11 @@
                     android:background="@drawable/bg_back_button"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
-                    android:text="Mohamed"
+                    android:text="Loading..."
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAllCaps="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,28 +98,7 @@
                     android:background="@drawable/bg_back_button"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
-                    android:text="Male"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="Date of birth"
-                    android:textColor="#8E8E93"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tvProfileBirth"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_back_button"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="16dp"
-                    android:text="01-01-2000"
+                    android:text="Loading..."
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -139,7 +119,7 @@
                     android:background="@drawable/bg_back_button"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
-                    android:text="mohamed.isamm@gmail.com"
+                    android:text="Loading..."
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />

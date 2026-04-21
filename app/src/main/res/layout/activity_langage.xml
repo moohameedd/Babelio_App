@@ -35,66 +35,51 @@
         app:layout_constraintBottom_toBottomOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnBack" />
-
-    <EditText
-        android:id="@+id/searchLanguage"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_back_button"
-        android:drawableStart="@android:drawable/ic_menu_search"
-        android:drawablePadding="12dp"
-        android:hint="Search your language"
-        android:paddingStart="16dp"
-        android:textColor="@color/white"
-        android:textColorHint="#8E8E93"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/searchLanguage"> <RelativeLayout
-        android:id="@+id/cardEnglish"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/bg_back_button"
-        android:padding="12dp">
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
 
-        <ImageView
-            android:id="@+id/flagEn"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/usa" />
+        <RelativeLayout
+            android:id="@+id/cardEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_back_button"
+            android:padding="12dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="16dp"
-            android:layout_toEndOf="@id/flagEn"
-            android:text="English"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/flagEn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/usa" />
 
-        <RadioButton
-            android:id="@+id/radioEnglish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            app:buttonTint="@color/primay_btn"
-            app:useMaterialThemeColors="false"
-            android:checked="true"/>
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/flagEn"
+                android:text="English"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                app:buttonTint="@color/primay_btn"
+                app:useMaterialThemeColors="false" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/cardArabic"
@@ -127,7 +112,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 app:buttonTint="@color/primay_btn"
-                app:useMaterialThemeColors="false"/>
+                app:useMaterialThemeColors="false" />
         </RelativeLayout>
 
     </LinearLayout>

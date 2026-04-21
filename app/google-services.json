@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229784431519",
+    "project_id": "babelio-da338",
+    "storage_bucket": "babelio-da338.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229784431519:android:8830d4b878dc12ef28abaa",
+        "android_client_info": {
+          "package_name": "com.example.tp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV5glJw_MA7K_YKcmgHGGs7pNUwZ6n9lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
