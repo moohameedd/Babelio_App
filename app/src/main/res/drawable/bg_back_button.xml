@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#393649" />
-    <corners android:radius="12dp" />
+<!-- drawable/bg_back_button.xml  – dark rounded square used for icon buttons and input field backgrounds -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1A1D2D" />
+    <corners android:radius="14dp" />
 </shape>

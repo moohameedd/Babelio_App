@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="420dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#1A1D2D"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Book cover -->
+        <ImageView
+            android:id="@+id/ivBookCover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/book" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Book Title"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/tvBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Author"
+            android:textColor="#8E8E93"
+            android:textSize="13sp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tvBookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="0.00 DT"
+            android:textColor="#F35A72"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Rating bar (read-only display in list) -->
+        <RatingBar
+            android:id="@+id/ratingBarBook"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0"
+            android:progressTint="#F35A72"
+            android:stepSize="0.5" />
+
+        <!-- Rating count -->
+        <TextView
+            android:id="@+id/tvRatingCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8E8E93"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Delete button (shown only in Favorites / Cart) -->
+        <ImageButton
+            android:id="@+id/btnDeleteBook"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_delete_btn"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Delete"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

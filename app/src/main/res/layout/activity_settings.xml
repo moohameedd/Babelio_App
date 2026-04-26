@@ -120,8 +120,8 @@
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:rotation="180"
-                    android:src="@drawable/return_img"
+                    
+                    android:src="@drawable/right_btn"
                     app:tint="@color/white" />
             </RelativeLayout>
 
@@ -176,8 +176,8 @@
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:rotation="180"
-                    android:src="@drawable/return_img"
+                    
+                    android:src="@drawable/right_btn"
                     app:tint="@color/white" />
             </RelativeLayout>
         </LinearLayout>
@@ -256,8 +256,8 @@
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:rotation="180"
-                    android:src="@drawable/return_img"
+                    
+                    android:src="@drawable/right_btn"
                     app:tint="@color/white" />
             </RelativeLayout>
 
@@ -302,8 +302,8 @@
                     android:layout_height="20dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:rotation="180"
-                    android:src="@drawable/return_img"
+                    
+                    android:src="@drawable/right_btn"
                     app:tint="@color/white" />
             </RelativeLayout>
         </LinearLayout>

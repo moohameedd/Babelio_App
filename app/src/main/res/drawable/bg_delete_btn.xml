@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/bg_delete_btn.xml  – rounded red background for the trash button -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#CC2222" />
+    <corners android:radius="10dp" />
+</shape>
