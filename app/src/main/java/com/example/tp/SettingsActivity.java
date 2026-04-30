@@ -38,18 +38,10 @@ public class SettingsActivity extends AppCompatActivity {
         RelativeLayout itemSecurity = findViewById(R.id.itemSecurity);   // Change password
         RelativeLayout itemLanguage = findViewById(R.id.itemLanguage);
         RelativeLayout btnLogout    = findViewById(R.id.btnLogout);
-        ImageButton    btnHomeNav   = findViewById(R.id.btnHomeNavSettings);
         ImageButton    btnNotif     = findViewById(R.id.btnNotification);
 
         loadUserData();
 
-        if (btnHomeNav != null) {
-            btnHomeNav.setOnClickListener(v -> {
-                Intent i = new Intent(this, HomeActivity.class);
-                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(i);
-            });
-        }
 
         if (btnNotif != null)
             btnNotif.setOnClickListener(v ->

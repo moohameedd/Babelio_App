@@ -122,7 +122,7 @@
         android:layout_height="60dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/bg_save_btn"
+        android:backgroundTint="@color/primay_btn"
         android:text="Save Language"
         android:textAllCaps="false"
         android:textColor="@color/white"

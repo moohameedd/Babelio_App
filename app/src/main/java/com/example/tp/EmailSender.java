@@ -58,7 +58,7 @@ public class EmailSender {
                 MimeMessage message = new MimeMessage(session);
                 message.setFrom(new InternetAddress(SENDER_EMAIL));
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(toEmail));
-                message.setSubject("✅ Order Confirmation - Babelio");
+                message.setSubject("[ Order Confirmation - Babelio ]");
                 message.setContent(buildHtmlBody(userName, items, subtotal), "text/html; charset=utf-8");
 
                 Transport.send(message);

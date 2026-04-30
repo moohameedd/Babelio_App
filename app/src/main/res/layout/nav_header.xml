@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="176dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -12,7 +13,9 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:paddingTop="8dp"
-        android:src="@drawable/user_button" />
+        android:src="@drawable/user_button"
+        app:tint="@color/white"
+        />
 
     <TextView
         android:id="@+id/nav_user_name"

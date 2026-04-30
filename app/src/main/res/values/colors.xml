@@ -4,5 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg">#161C27</color>
     <color name="primay_btn">#f6373f</color>
-    <color name="nav_item_color">#8E8E93</color>
+    <color name="nav_item_color">#f6373f</color>
 </resources>
