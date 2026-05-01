@@ -1,13 +1,12 @@
 package com.example.tp;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationActivity extends AppCompatActivity {
+public class NotificationActivity extends BaseActivity {
 
     private static final List<String> notifications = new ArrayList<>();
     /** Counts messages added since the user last opened NotificationActivity */
@@ -29,6 +28,9 @@ public class NotificationActivity extends AppCompatActivity {
 
         if (findViewById(R.id.btnBackNotif) != null)
             findViewById(R.id.btnBackNotif).setOnClickListener(v -> finish());
+
+        if (findViewById(R.id.btnContinueNotif) != null)
+            findViewById(R.id.btnContinueNotif).setOnClickListener(v -> finish());
     }
 
     /** Called from anywhere to add a notification and bump the badge. */

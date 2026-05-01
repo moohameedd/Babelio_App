@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Details"
+        android:text="@string/details"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Rate this book"
+                android:text="@string/rate_this_book"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -122,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="No ratings yet – be the first!"
+                android:text="@string/no_ratings_yet"
                 android:textColor="#8E8E93"
                 android:textSize="14sp" />
 
@@ -131,7 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Summary"
+                android:text="@string/summary"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -141,7 +141,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Loading description..."
+                android:text="@string/loading_description"
                 android:textColor="#B0B0B0"
                 android:textSize="16sp"
                 android:lineSpacingExtra="4dp" />
@@ -164,7 +164,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="Add to Favorites"
+            android:text="@string/add_to_favorites"
             android:backgroundTint="#1A1D2D"
             android:textColor="@color/white"
             app:cornerRadius="15dp" />
@@ -175,7 +175,7 @@
             android:layout_height="60dp"
             android:layout_weight="1"
             android:layout_marginStart="8dp"
-            android:text="Add to Cart"
+            android:text="@string/add_to_cart"
             android:backgroundTint="#F35A72"
             android:textColor="@color/white"
             app:cornerRadius="15dp" />

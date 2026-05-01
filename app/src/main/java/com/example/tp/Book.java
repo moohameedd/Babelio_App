@@ -1,6 +1,7 @@
 package com.example.tp;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Book implements Serializable {
     private String key;
@@ -57,5 +58,18 @@ public class Book implements Serializable {
         float total = userRating * ratingCount + stars;
         ratingCount++;
         userRating = total / ratingCount;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(key, book.key);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(key);
     }
 }

@@ -33,7 +33,7 @@
             android:id="@+id/tvToolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"
+            android:text="@string/home"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -90,7 +90,6 @@
             <androidx.core.widget.NestedScrollView
                 android:id="@+id/home_content"
                 android:layout_width="match_parent"
-
                 android:layout_height="match_parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -103,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="24dp"
-                        android:text="Which book do you want to buy?"
+                        android:text="@string/which_book"
                         android:textColor="@color/white"
                         android:textSize="26sp"
                         android:textStyle="bold"
@@ -127,7 +126,7 @@
                             android:background="@drawable/bg_back_button"
                             android:drawableStart="@android:drawable/ic_menu_search"
                             android:drawablePadding="10dp"
-                            android:hint="Search book"
+                            android:hint="@string/search_book"
                             android:paddingStart="16dp"
                             android:textColor="@color/white"
                             android:textColorHint="#808080" />
@@ -155,7 +154,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Popular Books"
+                            android:text="@string/popular_books"
                             android:textColor="@color/white"
                             android:textSize="18sp"
                             android:textStyle="bold" />
@@ -165,7 +164,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
-                            android:text="View All"
+                            android:text="@string/view_all"
                             android:textColor="#F35A72"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -201,7 +200,7 @@
                     android:id="@+id/tvFavLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Favorites"
+                    android:text="@string/favorites"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_margin="20dp"
@@ -228,7 +227,7 @@
                     android:id="@+id/tvShopLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Cart"
+                    android:text="@string/my_cart"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_margin="20dp"
@@ -260,7 +259,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total:"
+                            android:text="@string/total"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
 
@@ -279,7 +278,7 @@
                         android:id="@+id/btnBuyNow"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:text="Buy Now"
+                        android:text="@string/buy_now"
                         android:backgroundTint="#F35A72"
                         android:textColor="@color/white"
                         app:cornerRadius="15dp" />
@@ -303,7 +302,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Account"
+                        android:text="@string/account"
                         android:textColor="#8E8E93"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -354,14 +353,14 @@
                                         android:id="@+id/tvUserFullname"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Babelio User"
+                                        android:text="@string/default_user_name"
                                         android:textColor="@color/white"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Profile details"
+                                        android:text="@string/profile_details"
                                         android:textColor="#8E8E93"
                                         android:textSize="13sp" />
                                 </LinearLayout>
@@ -409,14 +408,14 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Password and Security"
+                                        android:text="@string/password_security"
                                         android:textColor="@color/white"
                                         android:textSize="15sp"
                                         android:textStyle="bold" />
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Change your password"
+                                        android:text="@string/personal_password"
                                         android:textColor="#8E8E93"
                                         android:textSize="13sp" />
                                 </LinearLayout>
@@ -438,7 +437,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="25dp"
-                        android:text="Settings"
+                        android:text="@string/settings"
                         android:textColor="#8E8E93"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -486,18 +485,19 @@
                                     android:layout_centerVertical="true"
                                     android:layout_marginStart="15dp"
                                     android:layout_toEndOf="@id/ic_lang"
-                                    android:text="Language"
+                                    android:text="@string/language"
                                     android:textColor="@color/white"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/tvCurrentLang"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_centerVertical="true"
                                     android:layout_marginEnd="10dp"
                                     android:layout_toStartOf="@id/arrow_lang"
-                                    android:text="English"
+                                    android:text="@string/english"
                                     android:textColor="#8E8E93" />
 
                                 <ImageView
@@ -538,7 +538,7 @@
                                     android:layout_centerVertical="true"
                                     android:layout_marginStart="15dp"
                                     android:layout_toEndOf="@id/ic_share"
-                                    android:text="Share App"
+                                    android:text="@string/share_app"
                                     android:textColor="@color/white"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
@@ -582,7 +582,7 @@
                                     android:layout_centerVertical="true"
                                     android:layout_marginStart="15dp"
                                     android:layout_toEndOf="@id/ic_contact"
-                                    android:text="Contact Us"
+                                    android:text="@string/contact_us"
                                     android:textColor="@color/white"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
@@ -626,7 +626,7 @@
                                     android:layout_centerVertical="true"
                                     android:layout_marginStart="15dp"
                                     android:layout_toEndOf="@id/ic_logout"
-                                    android:text="Log Out"
+                                    android:text="@string/log_out"
                                     android:textColor="#FF4B5C"
                                     android:textSize="16sp"
                                     android:textStyle="bold" />
@@ -653,8 +653,9 @@
             android:layout_height="70dp"
             android:layout_margin="10dp"
             app:backgroundTint="#1A1D2D"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/primay_btn"
+            app:itemIconTint="@color/nav_item_tint"
+            app:itemTextColor="@color/nav_item_tint"
+            app:itemBackground="@drawable/nav_item_background"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/bottom_nav_menu"
             app:layout_constraintBottom_toBottomOf="parent" />

@@ -9,12 +9,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class forgotPassword extends AppCompatActivity {
+public class forgotPassword extends BaseActivity {
 
     ImageView btnClose;
     Button btnResetPassword;
@@ -42,12 +41,12 @@ public class forgotPassword extends AppCompatActivity {
             String email = emailInput.getText().toString().trim();
 
             if (email.isEmpty()) {
-                Toast.makeText(this, "Please enter your email address.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.email_address), Toast.LENGTH_SHORT).show();
                 return;
             }
 
             if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Toast.makeText(this, "Please enter a valid email address.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.email_address), Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -57,12 +56,12 @@ public class forgotPassword extends AppCompatActivity {
 
     private void sendReset(String email) {
         btnResetPassword.setEnabled(false);
-        btnResetPassword.setText("Sending...");
+        btnResetPassword.setText(getString(R.string.reset_password) + "...");
 
         mAuth.sendPasswordResetEmail(email)
                 .addOnSuccessListener(unused -> {
                     Toast.makeText(this,
-                            "Password reset email sent to " + email + ". Check your inbox.",
+                            getString(R.string.order_placed_notif, email),
                             Toast.LENGTH_LONG).show();
 
                     new Handler(Looper.getMainLooper()).postDelayed(() -> {
@@ -74,13 +73,13 @@ public class forgotPassword extends AppCompatActivity {
                     String errorMsg = e.getMessage();
 
                     if (errorMsg != null && errorMsg.contains("no user record")) {
-                        Toast.makeText(this, "No account found with this email.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, getString(R.string.no_books_found), Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(this, "Error: " + errorMsg, Toast.LENGTH_LONG).show();
                     }
 
                     btnResetPassword.setEnabled(true);
-                    btnResetPassword.setText("Reset Password");
+                    btnResetPassword.setText(getString(R.string.reset_password));
                 });
     }
 }

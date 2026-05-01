@@ -1,6 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Babelio</string>
-    <string name="title_activity_reset_password">resetPassword</string>
-    <string name="home_title">Home</string>
-    <string name="settings_title">Settings</string>
+
+    <!-- ── Common ──────────────────────────────────────── -->
+    <string name="save">Save</string>
+    <string name="loading">Loading...</string>
+    <string name="details">Details</string>
+    <string name="error_fill_all">Please fill all fields</string>
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_select_gender">Please select your gender</string>
+    <string name="error_load_profile">Error loading profile data</string>
+    <string name="login_success">Login Successful</string>
+    <string name="account_created">Account created successfully</string>
+    <string name="reset_email_sent">Password reset email sent to %1$s. Check your inbox.</string>
+    <string name="error_no_account">No account found with this email.</string>
+
+    <!-- ── Login screen ─────────────────────────────────── -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_subtitle">Please fill up email address and password to log in to your account</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="save_password">Save password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign up</string>
+
+    <!-- ── Sign Up screen ──────────────────────────────── -->
+    <string name="create_account">Create Account</string>
+    <string name="signup_subtitle">Create an account to unlock all features and start your journey with us today</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account? Sign In</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <!-- ── Home screen ─────────────────────────────────── -->
+    <string name="which_book">Which book do you want to buy?</string>
+    <string name="search_book">Search book</string>
+    <string name="popular_books">Popular Books</string>
+    <string name="view_all">View All</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="my_cart">My Cart</string>
+    <string name="settings">Settings</string>
+    <string name="no_books_found">No books found</string>
+    <string name="search_failed">Search failed. Check your connection.</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="order_placed">Order placed! Invoice sent to your email.</string>
+    <string name="order_placed_notif">Order placed! Your invoice was sent to %1$s</string>
+    <string name="sort_a_z">A → Z</string>
+    <string name="sort_price">Price: Low to High</string>
+    <string name="currency_format">%.2f TND</string>
+    <string name="rating_format">%.1f (%d)</string>
+
+    <!-- ── Settings screen ─────────────────────────────── -->
+    <string name="account">Account</string>
+    <string name="profile_details">Profile details</string>
+    <string name="password_security">Password and Security</string>
+    <string name="personal_password">Personal password</string>
+    <string name="change_password_hint">Change your personal password</string>
+    <string name="language">Language</string>
+    <string name="share_app">Share App</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="log_out">Log Out</string>
+    <string name="logged_out">Logged Out</string>
+    <string name="default_user_name">Babelio User</string>
+    <string name="no_email_client">No email app found.</string>
+
+    <!-- ── Language screen ─────────────────────────────── -->
+    <string name="language_title">Language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="save_language">Save Language</string>
+    <string name="language_changed_ar">Language changed to Arabic</string>
+    <string name="language_changed_en">Language changed to English</string>
+
+    <!-- ── Book Details ────────────────────────────────── -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="rating">Rating</string>
+    <string name="author">Author</string>
+    <string name="unknown_author">Unknown Author</string>
+    <string name="description">Description</string>
+    <string name="added_to_cart">Added to cart</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="rate_this_book">Rate this book</string>
+    <string name="no_ratings_yet">No ratings yet – be the first!</string>
+    <string name="summary">Summary</string>
+    <string name="loading_description">Loading description...</string>
+    <string name="no_description">No description available.</string>
+
+    <!-- ── Cart ───────────────────────────────────────── -->
+    <string name="total">Total:</string>
+    <string name="buy_now">Buy Now</string>
+
+    <!-- ── Profile ────────────────────────────────────── -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about">About</string>
+
+    <!-- ── Change Password ────────────────────────────── -->
+    <string name="change_password">Change Password</string>
+    <string name="update_your_password">Update your password</string>
+    <string name="change_password_subtitle">Enter your current password and choose a strong new one.</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="save_password_btn">Save Password</string>
+    <string name="password_changed_notif">Your password was changed successfully.</string>
+
+    <!-- ── Forgot Password ────────────────────────────── -->
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_subtitle">Enter the email address associated with your account</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="title_activity_reset_password">Reset Password</string>
+    <string name="enter_email_reset">Enter your email to reset your password</string>
+    <string name="send_reset_email">Send Reset Link</string>
+
+    <!-- ── Notifications ──────────────────────────────── -->
+    <string name="notifications">Notifications</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="continue_btn">Continue</string>
+    <string name="notification_label">Notification</string>
+    <string name="notif_added_cart">Added to cart: %1$s</string>
+    <string name="notif_added_fav">Added to favorites: %1$s</string>
+
+    <!-- ── Drawer ─────────────────────────────────────── -->
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_orders">My Orders</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_contact">Contact Us</string>
+    <string name="nav_logout">Log Out</string>
+
+    <!-- ── Splash ─────────────────────────────────────── -->
+    <string name="welcome">Welcome to Babelio</string>
+    <string name="tagline">Discover the world of books</string>
+
+    <!-- ── Share / Contact ────────────────────────────── -->
+    <string name="share_text">Check out Babelio, the best book app!</string>
+    <string name="share_chooser_title">Share Babelio via</string>
+    <string name="contact_subject">Contact Us - Babelio</string>
 </resources>

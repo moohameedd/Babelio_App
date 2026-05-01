@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login"
+    tools:context=".activity_langage"
     android:background="@color/bg">
 
 
@@ -28,7 +28,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Language"
+        android:text="@string/language_title"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -66,7 +66,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@id/flagEn"
-                android:text="English"
+                android:text="@string/english"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -101,7 +101,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@id/flagAr"
-                android:text="Arabic"
+                android:text="@string/arabic"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -123,7 +123,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@color/primay_btn"
-        android:text="Save Language"
+        android:text="@string/save_language"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"

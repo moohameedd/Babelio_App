@@ -4,34 +4,34 @@
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/user_button"
-            android:title="Profile" />
+            android:title="@string/nav_profile" />
         <item
             android:id="@+id/nav_orders"
             android:icon="@drawable/checkout"
-            android:title="Orders" />
+            android:title="@string/nav_orders" />
         <item
             android:id="@+id/nav_favorites_drawer"
             android:icon="@drawable/favorie"
-            android:title="Favorites" />
+            android:title="@string/favorites" />
         <item
             android:id="@+id/nav_settings_drawer"
             android:icon="@drawable/setting"
-            android:title="Settings" />
+            android:title="@string/nav_settings" />
     </group>
-    <item android:title="Communicate">
+    <item android:title="@string/contact_us">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@android:drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/nav_share" />
             <item
                 android:id="@+id/nav_contact"
                 android:icon="@android:drawable/ic_menu_send"
-                android:title="Contact Us" />
+                android:title="@string/nav_contact" />
             <item
                 android:id="@+id/nav_logout"
                 android:icon="@android:drawable/ic_lock_power_off"
-                android:title="Logout" />
+                android:title="@string/nav_logout" />
         </menu>
     </item>
 </menu>

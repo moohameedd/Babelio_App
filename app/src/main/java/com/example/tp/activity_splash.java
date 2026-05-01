@@ -6,12 +6,11 @@ import android.os.Handler;
 import android.os.Looper;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class activity_splash extends AppCompatActivity {
+public class activity_splash extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

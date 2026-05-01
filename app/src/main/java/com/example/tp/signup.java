@@ -2,7 +2,6 @@ package com.example.tp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -10,7 +9,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -22,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class signup extends AppCompatActivity {
+public class signup extends BaseActivity {
 
     private TextInputEditText etEmail, etPassword, etFullname, etCpassword;
     private RadioGroup rgGender;
@@ -75,24 +73,24 @@ public class signup extends AppCompatActivity {
 
         int selectedGenderId = rgGender.getCheckedRadioButtonId();
         if (selectedGenderId == -1) {
-            Toast.makeText(this, "Please select your gender", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_select_gender), Toast.LENGTH_SHORT).show();
             return;
         }
         RadioButton rbSelectedGender = findViewById(selectedGenderId);
         String gender = rbSelectedGender.getText().toString();
 
         if (fullname.isEmpty() || email.isEmpty() || password.isEmpty() || cpassword.isEmpty()) {
-            Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_fill_all), Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (!password.equals(cpassword)) {
-            Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_passwords_dont_match), Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (password.length() < 6) {
-            Toast.makeText(this, "Password must be at least 6 characters", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_password_short), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -111,7 +109,7 @@ public class signup extends AppCompatActivity {
                         db.collection("users").document(userId)
                                 .set(user)
                                 .addOnSuccessListener(aVoid -> {
-                                    Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(this, getString(R.string.account_created), Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(signup.this, login.class));
                                     finish();
                                 })

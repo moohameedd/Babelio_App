@@ -53,7 +53,10 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         Book book = bookList.get(position);
         holder.tvTitle.setText(book.getTitle());
         holder.tvAuthor.setText(book.getAuthor());
-        holder.tvPrice.setText(String.format(Locale.getDefault(), "%.2f DT", book.getPrice()));
+        
+        // Fully localized currency
+        String priceText = holder.itemView.getContext().getString(R.string.currency_format, book.getPrice());
+        holder.tvPrice.setText(priceText);
 
         float avg   = book.getUserRating();
         int   count = book.getRatingCount();
@@ -64,8 +67,9 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         if (holder.tvRatingCount != null) {
             if (count > 0) {
                 holder.tvRatingCount.setVisibility(View.VISIBLE);
-                holder.tvRatingCount.setText(
-                        String.format(Locale.getDefault(), "%.1f (%d)", avg, count));
+                // Fully localized rating format
+                String ratingText = holder.itemView.getContext().getString(R.string.rating_format, avg, count);
+                holder.tvRatingCount.setText(ratingText);
             } else {
                 holder.tvRatingCount.setVisibility(View.GONE);
             }
@@ -87,7 +91,6 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             if (mode == Mode.FAVORITES || mode == Mode.CART) {
                 holder.btnDelete.setVisibility(View.VISIBLE);
                 holder.btnDelete.setOnClickListener(v -> {
-                    // Prevent propagation to itemView click
                     v.setEnabled(false); 
                     int pos = holder.getBindingAdapterPosition();
                     if (pos == RecyclerView.NO_POSITION) return;

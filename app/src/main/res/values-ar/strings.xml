@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بابيليو</string>
+
+    <!-- ── Common ──────────────────────────────────────── -->
+    <string name="save">حفظ</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="details">التفاصيل</string>
+    <string name="error_fill_all">يرجى ملء جميع الحقول</string>
+    <string name="error_passwords_dont_match">كلمات المرور غير متطابقة</string>
+    <string name="error_password_short">يجب أن تكون كلمة المرور 6 أحرف على الأقل</string>
+    <string name="error_invalid_email">يرجى إدخال بريد إلكتروني صالح</string>
+    <string name="error_select_gender">يرجى اختيار الجنس</string>
+    <string name="error_load_profile">خطأ في تحميل بيانات الملف الشخصي</string>
+    <string name="login_success">تم تسجيل الدخول بنجاح</string>
+    <string name="account_created">تم إنشاء الحساب بنجاح</string>
+    <string name="reset_email_sent">تم إرسال بريد إعادة تعيين كلمة المرور إلى %1$s. افحص بريدك الوارد.</string>
+    <string name="error_no_account">لم يتم العثور على حساب بهذا البريد الإلكتروني.</string>
+
+    <!-- ── Login screen ─────────────────────────────────── -->
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_in_subtitle">يرجى إدخال البريد الإلكتروني وكلمة المرور لتسجيل الدخول إلى حسابك</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="save_password">تذكرني</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="sign_up">إنشاء حساب</string>
+
+    <!-- ── Sign Up screen ──────────────────────────────── -->
+    <string name="create_account">إنشاء حساب</string>
+    <string name="signup_subtitle">أنشئ حساباً لفتح جميع الميزات وابدأ رحلتك معنا اليوم</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="already_have_account">هل لديك حساب بالفعل؟ تسجيل الدخول</string>
+    <string name="gender">الجنس</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+
+    <!-- ── Home screen ─────────────────────────────────── -->
+    <string name="which_book">أي كتاب تريد شراءه؟</string>
+    <string name="search_book">ابحث عن كتاب</string>
+    <string name="popular_books">الكتب الرائجة</string>
+    <string name="view_all">عرض الكل</string>
+    <string name="home">الرئيسية</string>
+    <string name="favorites">المفضلة</string>
+    <string name="my_cart">سلتي</string>
+    <string name="settings">الإعدادات</string>
+    <string name="no_books_found">لم يتم العثور على كتب</string>
+    <string name="search_failed">فشل البحث. تحقق من اتصالك بالإنترنت.</string>
+    <string name="cart_empty">سلتك فارغة</string>
+    <string name="order_placed">تم تقديم الطلب! تم إرسال الفاتورة إلى بريدك الإلكتروني.</string>
+    <string name="order_placed_notif">تم تقديم الطلب! تم إرسال فاتورتك إلى %1$s</string>
+    <string name="sort_a_z">أ → ي</string>
+    <string name="sort_price">السعر: من الأقل للأعلى</string>
+    <string name="currency_format">%.2f د.ت</string>
+    <string name="rating_format">%.1f (%d)</string>
+
+    <!-- ── Settings screen ─────────────────────────────── -->
+    <string name="account">الحساب</string>
+    <string name="profile_details">تفاصيل الملف الشخصي</string>
+    <string name="password_security">كلمة المرور والأمان</string>
+    <string name="personal_password">كلمة المرور الشخصية</string>
+    <string name="change_password_hint">تغيير كلمة المرور الشخصية</string>
+    <string name="language">اللغة</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="logged_out">تم تسجيل الخروج</string>
+    <string name="default_user_name">مستخدم بابيليو</string>
+    <string name="no_email_client">لم يتم العثور على تطبيق بريد إلكتروني.</string>
+
+    <!-- ── Language screen ─────────────────────────────── -->
+    <string name="language_title">اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="save_language">حفظ اللغة</string>
+    <string name="language_changed_ar">تم تغيير اللغة إلى العربية</string>
+    <string name="language_changed_en">تم تغيير اللغة إلى الإنجليزية</string>
+
+    <!-- ── Book Details ────────────────────────────────── -->
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="add_to_favorites">أضف إلى المفضلة</string>
+    <string name="remove_from_favorites">إزالة من المفضلة</string>
+    <string name="rating">التقييم</string>
+    <string name="author">المؤلف</string>
+    <string name="unknown_author">مؤلف غير معروف</string>
+    <string name="description">الوصف</string>
+    <string name="added_to_cart">تمت الإضافة إلى السلة</string>
+    <string name="added_to_favorites">تمت الإضافة إلى المفضلة</string>
+    <string name="rate_this_book">قيم هذا الكتاب</string>
+    <string name="no_ratings_yet">لا توجد تقييمات بعد - كن الأول!</string>
+    <string name="summary">ملخص</string>
+    <string name="loading_description">جاري تحميل الوصف...</string>
+    <string name="no_description">لا يوجد وصف متاح.</string>
+
+    <!-- ── Cart ───────────────────────────────────────── -->
+    <string name="total">المجموع:</string>
+    <string name="buy_now">شراء الآن</string>
+
+    <!-- ── Profile ────────────────────────────────────── -->
+    <string name="profile">الملف الشخصي</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="about">حول</string>
+
+    <!-- ── Change Password ────────────────────────────── -->
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="update_your_password">تحديث كلمة المرور الخاصة بك</string>
+    <string name="change_password_subtitle">أدخل كلمة المرور الحالية واختر كلمة مرور جديدة قوية.</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="update_password">تحديث كلمة المرور</string>
+    <string name="save_password_btn">حفظ كلمة المرور</string>
+    <string name="password_changed_notif">تم تغيير كلمة المرور بنجاح.</string>
+
+    <!-- ── Forgot Password ────────────────────────────── -->
+    <string name="forgot_password_title">نسيت كلمة المرور</string>
+    <string name="forgot_password_subtitle">أدخل عنوان البريد الإلكتروني المرتبط بحسابك</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="title_activity_reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="enter_email_reset">أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور</string>
+    <string name="send_reset_email">إرسال رابط إعادة التعيين</string>
+
+    <!-- ── Notifications ──────────────────────────────── -->
+    <string name="notifications">الإشعارات</string>
+    <string name="no_notifications">لا توجد إشعارات</string>
+    <string name="continue_btn">استمرار</string>
+    <string name="notification_label">إشعار</string>
+    <string name="notif_added_cart">تمت الإضافة إلى السلة: %1$s</string>
+    <string name="notif_added_fav">تمت الإضافة إلى المفضلة: %1$s</string>
+
+    <!-- ── Drawer ─────────────────────────────────────── -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="nav_orders">طلباتي</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_share">مشاركة</string>
+    <string name="nav_contact">تواصل معنا</string>
+    <string name="nav_logout">تسجيل الخروج</string>
+
+    <!-- ── Splash ─────────────────────────────────────── -->
+    <string name="welcome">مرحباً بك في بابيليو</string>
+    <string name="tagline">اكتشف عالم الكتب</string>
+
+    <!-- ── Extra ─────────────────────────────────────── -->
+    <string name="share_text">تحقق من بابيليو، أفضل تطبيق للكتب!</string>
+    <string name="share_chooser_title">مشاركة بابيليو عبر</string>
+    <string name="contact_subject">تواصل معنا - بابيليو</string>
+</resources>

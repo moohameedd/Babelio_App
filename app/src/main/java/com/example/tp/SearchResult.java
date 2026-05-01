@@ -1,5 +1,6 @@
 package com.example.tp;
 
+import com.google.gson.JsonElement;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class SearchResult {
         private String title;
 
         @SerializedName("cover_i")
-        private String coverI;
+        private JsonElement coverI;
 
         @SerializedName("author_name")
         private List<String> authorName;
@@ -36,7 +37,10 @@ public class SearchResult {
         }
 
         public String getCoverI() {
-            return coverI;
+            if (coverI != null && coverI.isJsonPrimitive()) {
+                return coverI.getAsString();
+            }
+            return "";
         }
 
         public List<String> getAuthorName() {

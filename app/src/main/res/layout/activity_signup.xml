@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login"
+    tools:context=".signup"
     android:background="@color/bg">
 
 
@@ -26,7 +26,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -40,7 +40,7 @@
         android:id="@+id/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Create an account to unlock all features and start your journey with us today"
+        android:text="@string/signup_subtitle"
         android:textColor="#B0B0C3"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/title"
@@ -71,7 +71,7 @@
                 app:cursorColor="@android:color/darker_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Fullname"
+                android:hint="@string/full_name"
                 app:boxBackgroundMode="filled"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
@@ -98,7 +98,7 @@
                 app:cursorColor="@android:color/darker_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email Address"
+                android:hint="@string/email_address"
                 app:boxBackgroundMode="filled"
                 app:boxStrokeWidth="0dp"
                 app:boxStrokeWidthFocused="0dp"
@@ -124,7 +124,7 @@
                 app:cursorColor="@android:color/darker_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/password"
                 app:endIconMode="password_toggle"
                 app:boxBackgroundMode="filled"
                 app:boxStrokeWidth="0dp"
@@ -152,7 +152,7 @@
                 app:cursorColor="@android:color/darker_gray"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_password"
                 app:endIconMode="password_toggle"
                 app:boxBackgroundMode="filled"
                 app:boxStrokeWidth="0dp"
@@ -178,7 +178,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="@string/gender"
                 android:textColor="#AAAAAA"
                 android:layout_marginTop="12dp"
                 android:textSize="14sp"/>
@@ -194,7 +194,7 @@
                     android:id="@+id/rbMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
+                    android:text="@string/male"
                     android:textColor="@color/white"
                     android:buttonTint="@color/white"/>
 
@@ -202,7 +202,7 @@
                     android:id="@+id/rbFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Female"
+                    android:text="@string/female"
                     android:textColor="@color/white"
                     android:buttonTint="@color/white"
                     android:layout_marginStart="24dp"/>
@@ -217,7 +217,7 @@
         android:id="@+id/btnSignup"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:backgroundTint="@color/primay_btn"
         app:layout_constraintTop_toBottomOf="@id/container"
